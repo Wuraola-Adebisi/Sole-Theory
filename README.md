@@ -1,7 +1,6 @@
 # Sole Theory
 
-A premium fictional footwear store built with HTML and CSS. Editorial layouts, horizontal scroll, marquee animations, and the kind of design that makes people ask if you used a framework. You did not.
-
+A premium fictional footwear store built with HTML and CSS. Editorial layouts, horizontal scroll, and marquee animations.
 ## 🔗 Live Site
 [View Live](https://wuraola-adebisi.github.io/Sole-Theory/)
 
@@ -41,9 +40,3 @@ Sole Theory is a concept e-commerce website for a fictional high-end shoe brand.
 - CSS animation and keyframe techniques
 - Designing a consistent brand identity in CSS
 - Building for both desktop and mobile from the start
-```
-```
-
-Topics:
-```
-html css frontend web-design conference responsive animations css-only
