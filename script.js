@@ -252,7 +252,7 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-// Cart Logic
+
 window.addToCart = (id) => {
   const product = products[id];
   cart.push(product);
