@@ -1,42 +1,53 @@
 # Sole Theory
 
-A premium fictional footwear store built with HTML and CSS. Editorial layouts, horizontal scroll, and marquee animations.
-## 🔗 Live Site
-[View Live](https://wuraola-adebisi.github.io/Sole-Theory/)
+Sole Theory is a fictional editorial footwear storefront built with HTML, CSS, and vanilla JavaScript. It combines a magazine-style product experience with interactive product modals, a demo cart drawer, responsive navigation, reveal animations, and a horizontal new-arrivals gallery.
 
-## About
-Sole Theory is a concept e-commerce website for a fictional high-end shoe brand. The project was built to push CSS layout and animation skills significantly beyond the basics — editorial split layouts, horizontal scroll galleries, CSS animations, and a full multi-section design system.
+## Live Site
 
-## Built With
-- HTML5
-- CSS3
-- Google Fonts
-- CSS Custom Properties
-- CSS Grid & Flexbox
-- CSS Animations & Transitions
+[View Sole Theory](https://wuraola-adebisi.github.io/Sole-Theory/)
 
 ## Features
-- Full viewport hero with animated headline
-- Horizontal scroll product gallery with scroll-snap
-- Alternating editorial product list layout
-- CSS marquee animation strip
-- Featured product split section
-- Testimonials section
-- Newsletter section
-- Fully responsive on mobile
 
-## CSS Techniques Used
-- `scroll-snap-type` and `scroll-snap-align`
-- `@keyframes` animations
-- `mix-blend-mode`
-- `clip-path`
-- `object-fit` and `aspect-ratio.`
-- CSS custom properties throughout
-- `::before` and `::after` pseudo-elements
+- Editorial landing page for a fictional luxury footwear curator
+- Responsive product collection with alternating image/text layouts
+- Product detail modal with full-image display and add-to-cart action
+- Slide-out demo cart with running total and removable items
+- Horizontal scroll gallery with arrow controls
+- Mobile navigation menu with accessible expanded state
+- Newsletter demo form with inline feedback
+- Reduced-motion support and keyboard focus states
+- Social preview metadata and favicon for a more complete published site
 
-## What I Learned
-- How to build complex multi-section editorial layouts
-- Horizontal scroll galleries with CSS scroll snap
-- CSS animation and keyframe techniques
-- Designing a consistent brand identity in CSS
-- Building for both desktop and mobile from the start
+## Built With
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Google Fonts
+- Font Awesome
+- Cloudinary-hosted imagery
+
+## CSS Techniques
+
+- CSS custom properties
+- Flexbox and CSS Grid
+- Scroll snapping
+- Responsive media queries
+- Keyframe marquee animation
+- `object-fit` image handling
+- `prefers-reduced-motion`
+- Accessible `:focus-visible` styles
+
+## JavaScript Functionality
+
+- Intersection Observer reveal animations
+- Horizontal gallery controls
+- Mobile menu toggle
+- Product modal open/close behavior
+- Escape-key modal and cart closing
+- Demo cart state, totals, and item removal
+- Newsletter and checkout demo feedback
+
+## Project Status
+
+This is a portfolio concept project. Product browsing, modal details, cart interactions, and newsletter feedback are functional demos. Checkout and newsletter submission are intentionally not connected to a backend or payment provider.
