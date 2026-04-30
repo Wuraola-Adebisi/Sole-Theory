@@ -3,330 +3,312 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sole Theory</title>
+  <title>Sole Theory | Curated Footwear for the Modern Woman</title>
+  <meta name="description" content="Sole Theory is a fictional editorial footwear storefront with curated product cards, modal details, cart interactions, and responsive layouts.">
+  <meta name="theme-color" content="#0f0f0f">
+  <meta property="og:title" content="Sole Theory | Editorial Footwear Storefront">
+  <meta property="og:description" content="A polished concept e-commerce site for a fictional high-end footwear curator.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836873/8jNEqDk_wfwotv.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sole Theory | Editorial Footwear Storefront">
+  <meta name="twitter:description" content="A polished concept e-commerce site for a fictional high-end footwear curator.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836873/8jNEqDk_wfwotv.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://res.cloudinary.com">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230f0f0f'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='%23c1622f'%3EST%3C/text%3E%3C/svg%3E">
+  
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+
+  <header class="main-header">
+    <h1>SOLE THEORY</h1>
+    
+    <div class="nav-wrapper">
+      <nav id="primary-navigation">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#care">Care Guide</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-toggle" aria-label="Open cart" aria-controls="cart-drawer" aria-expanded="false">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count" class="cart-badge">0</span>
+        </button>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+          <div class="hamburger"></div>
+        </button>
+      </div>
+    </div>
+  </header>
+
   <main>
-    <!--Header-->
-    <header class="main-header">
-      <h1>SOLE THEORY</h1>
-      <nav>
+    <section id="hero" data-reveal>
+      <h2>Your Shoes Are Talking.<br>
+        Are They Saying Something Interesting?</h2>
+      <p>SOLE THEORY exists for the woman who spends twenty minutes choosing shoes for an errand run and absolutely does not see a problem with that.</p>
+      <a href="#collections" class="hero-btn">Explore The Collection</a>
+    </section>
+    
+    <section id="collections">
+      <h2 data-reveal>The Collection</h2>
+
+      <article class="product-card" data-reveal data-id="boardroom-clog">
+        <div class="card-image">
+          <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836873/8jNEqDk_wfwotv.jpg" alt="A brown high platform clog" loading="lazy">
+        </div>
+        <div class="card-text">
+          <span class="card-number">01</span>
+          <h3>The Boardroom Clog</h3>
+          <p>A high platform clog that says I have a 9 am meeting, and I still look better than everyone in this building.</p>
+          <p class="price">$220</p>
+          <button class="view-btn">View Details</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal data-id="soft-life-loafer">
+        <div class="card-text">
+          <span class="card-number">02</span>
+          <h3>The Soft Life Loafer</h3>
+          <p>A butter-soft leather loafer in warm caramel. For the minimalist who wants to look effortless.</p>
+          <p class="price">$385</p>
+          <button class="view-btn">View Details</button>
+        </div>
+        <div class="card-image">
+          <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836858/zbaZuxg_naoftx.jpg" alt="A butter-soft leather loafer in warm caramel" loading="lazy">
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal data-id="asics-edit">
+        <div class="card-image">
+          <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836858/42hBL1P_r6hedo.jpg" alt="A clean crisp ASICS sneaker" loading="lazy">
+        </div>
+        <div class="card-text">
+          <span class="card-number">03</span>
+          <h3>The ASICS Edit</h3>
+          <p>A clean, crisp ASICS sneaker in red and yellow for the girl who moves.</p>
+          <p class="price">$165</p>
+          <button class="view-btn">View Details</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal data-id="chaos-heel">
+        <div class="card-text">
+          <span class="card-number">04</span>
+          <h3>The Chaos Heel</h3>
+          <p>A strappy stiletto in brown so bold it will arrive at the party before you do.</p>
+          <p class="price">$445</p>
+          <button class="view-btn">View Details</button>
+        </div>
+        <div class="card-image">
+          <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836855/qeOMjIZ_bfbvqf.jpg" alt="A strappy stiletto in brown" loading="lazy">
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal data-id="last-word-mule">
+        <div class="card-image">
+          <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836855/7vasdMM_uwlbqz.jpg" alt="A slip-on mule with terracotta netting" loading="lazy">
+        </div>
+        <div class="card-text">
+          <span class="card-number">05</span>
+          <h3>The Last Word Mule</h3>
+          <p>A pointed mesh mule with a suede bow that has absolutely no business being this elegant.</p>
+          <p class="price">$700</p>
+          <button class="view-btn">View Details</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-reveal data-id="luxury-slide">
+        <div class="card-text">
+          <span class="card-number">06</span>
+          <h3>The Quiet Luxury Slide</h3>
+          <p>A suede thong sandal with silver hardware so understated it hurts.</p>
+          <p class="price">$120</p>
+          <button class="view-btn">View Details</button>
+        </div>
+        <div class="card-image">
+          <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836855/ufH4Wui_jmri1p.jpg" alt="A suede thong sandal with silver hardware" loading="lazy">
+        </div>
+      </article>
+
+
+      <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track">
+          <span>NEW IN</span><span class="dot">&middot;</span><span>THE EDIT</span><span class="dot">&middot;</span><span>SOLE THEORY</span><span class="dot">&middot;</span><span>WALK WELL</span><span class="dot">&middot;</span>
+          <span>NEW IN</span><span class="dot">&middot;</span><span>THE EDIT</span><span class="dot">&middot;</span><span>SOLE THEORY</span><span class="dot">&middot;</span><span>WALK WELL</span><span class="dot">&middot;</span>
+        </div>
+      </div>
+    </section>
+    
+    <section id="featured">
+      <div class="featured-header" data-reveal>
+        <h2>New In &mdash; The Edit</h2>
+        <p>Scroll to explore &rarr;</p>
+      </div>
+      <div class="featured-wrapper" data-reveal>
+        <button class="scroll-arrow scroll-arrow-left" aria-label="Scroll left">&larr;</button>
+        <div class="featured-scroll">
+          <div class="featured-item">
+            <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/cOx09Ss_hdmn3j.jpg" alt="The After Hours Boot" loading="lazy">
+            <span>The After Hours Boot</span>
+          </div>
+          <div class="featured-item">
+            <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/RurTZqt_dl6yy1.jpg" alt="A slip-on mule" loading="lazy">
+            <span>The Monday Mule</span>
+          </div>
+          <div class="featured-item">
+            <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/4a6e0ps_ik7hdk.jpg" alt="The Power Pump" loading="lazy">
+            <span>The Power Stiletto</span>
+          </div>
+          <div class="featured-item">
+            <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1776420728/105446090b07b062f717f777f34f0335_onq6ab.jpg" alt="The ROAM Black Pony" loading="lazy">
+            <span>ROAM Black Pony</span>
+          </div>
+          <div class="featured-item">
+            <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1776420844/ALOHAS_490_Rife_Sneakers_at_Free_People_in_Yellow_Size__EU_37_xk4mae.jpg" alt="ALOHAS 490 Rife Sneakers" loading="lazy">
+            <span>ALOHAS 490 Rife Sneakers</span>
+          </div>
+          <div class="featured-item">
+            <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1776421028/Meet_Roam___A_chunky_mule_flat_with_bold_round_toes_sculptural_curves_and_a_tread_sole____Online_Now_US_Womens_5_-_16___Mens_4_-_14_pdjfvy.jpg" alt="ROAM In Brown" loading="lazy">
+            <span>ROAM In Brown</span>
+          </div>
+          <div class="featured-item">
+            <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/J2WuJxs_zdmnoh.jpg" alt="The Bordeaux Edit" loading="lazy">
+            <span>The Bordeaux Edit</span>
+          </div>
+          <div class="featured-item">
+            <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836853/R6OxMEI_ko2otb.jpg" alt="The Barely There Heel" loading="lazy">
+            <span>The Barely There Heel</span>
+          </div>
+          <div class="featured-item">
+            <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/KlhrG0n_y6wfuw.jpg" alt="The Boardwalk Sandal" loading="lazy">
+            <span>The Boardwalk Sandal</span>
+          </div>
+        </div>
+        <button class="scroll-arrow scroll-arrow-right" aria-label="Scroll right">&rarr;</button>
+      </div>
+    </section>
+    
+    <section id="about" data-reveal>
+      <div class="about-image">
+        <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/FkK72mV_svh3gh.jpg" alt="A pair of shoes on a marble surface" loading="lazy">
+      </div>
+      <div class="about-text">
+        <h2>We Did The Hard Part For You</h2>
+        <p>SOLE THEORY is not a shoemaker. We are the friend who has genuinely good taste, too much time, and absolutely no problem telling you that those shoes are not it. We scour showrooms, storefronts, and the darker corners of the internet so that everything you find here has already passed a very rigorous and entirely personal test: would we wear it? If the answer is no, it doesn't make the cut. Simple.</p>
+        <p>We carry pieces from the brands worth knowing &mdash; the classics you should already own, the new names you haven't heard of yet but will, and the occasional luxury find for when you decide that today is the day you treat yourself and you mean it. ASICS for the girl who moves. Hermes for the girl who arrives. Everything in between for the girl who is both, depending on the day.</p>
+        <p>There is no single type of SOLE THEORY customer. She is the one in the boardroom in the cobalt heels. She is the one at the farmers' market in the suede slide. She is the one at the airport looking unreasonably put together at 6 am in the white sneakers. The only thing she all has in common is that she never leaves the house in a shoe she doesn't love. We respect that deeply. We built this store for her.</p>
+        <blockquote>
+          "We are not here to sell you shoes. We are here to make sure you never have to think about whether your shoes are good enough. They are. We checked."
+          <cite>&mdash; Chioma Adeyinka, Founder & Creative Director</cite>
+        </blockquote>
+      </div>
+    </section>
+   
+    <section id="journal" data-reveal>
+      <h2>From The SOLE THEORY Journal</h2>
+      <div class="journal-grid">
+        <article class="journal-card">
+          <h3>How To Build A Shoe Wardrobe From Scratch</h3>
+          <p>Six pairs. Every occasion covered. No regrets.</p>
+          <span class="journal-link">Editorial Preview</span>
+        </article>
+        <article class="journal-card">
+          <h3>The Clog Comeback Nobody Asked For But Everyone Needed</h3>
+          <p>A love letter to the most misunderstood shoe in fashion history.</p>
+          <span class="journal-link">Editorial Preview</span>
+        </article>
+        <article class="journal-card">
+          <h3>Nigerian Leather: Why The World Is Finally Paying Attention</h3>
+          <p>The craft has always been there. The recognition is just catching up.</p>
+          <span class="journal-link">Editorial Preview</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="care" data-reveal>
+      <h2>Your Shoes Work Hard. Return The Favour.</h2>
+      <p>Tips:</p>
       <ul>
-        <li><a href="#hero">Home</a></li>
+        <li>Store in dust bags &mdash; not the plastic they came in, not the floor, dust bags.</li>
+        <li>Rotate your pairs &mdash; wearing the same shoes every day is a commitment we respect but do not recommend.</li>
+        <li>Clean leather with a soft, damp cloth &mdash; not a kitchen sponge, not a paper towel, a soft cloth.</li>
+        <li>Use a shoe tree for structured styles &mdash; it keeps the shape and makes you look like someone who has things figured out.</li>
+        <li>Waterproof suede before first wear &mdash; learn from the mistakes of those who came before you.</li>
+      </ul>
+    </section>
+    
+    <section id="newsletter" data-reveal>
+      <h2>Get On The List</h2>
+      <p>New drops, exclusive collabs, and the kind of shoe content that makes you late to work because you fell down a rabbit hole at 7am. We are not sorry. Neither are you.</p>
+      <form id="newsletter-form">
+        <label for="email-input" class="sr-only">Your email address</label>
+        <input 
+          id="email-input"
+          type="email" 
+          name="email"
+          placeholder="Your email address" 
+          required 
+          autocomplete="email">
+        <button type="submit">Add Me To The List</button>
+      </form>
+      <div id="form-feedback" class="sr-only" aria-live="polite"></div>
+    </section> 
+  </main>
+      
+  <footer>
+    <nav aria-label="Footer navigation">
+      <ul>
         <li><a href="#collections">Collections</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#journal">Journal</a></li>
         <li><a href="#care">Care Guide</a></li>
+        <li><a href="#newsletter">Contact</a></li>
       </ul>
     </nav>
-    </header>
-   
-    
-    <section id="hero">
-      <h2>Your Shoes Are Talking.<br>
-        Are They Saying Something Interesting?</h2>
-      <p>SOLE THEORY exists for the woman who spends twenty minutes choosing shoes for an errand run and absolutely does not see a problem with that.
-</p>
-      <a href="#collections" class="hero-btn">Explore The Collection</a>
-    </section>
-    
-    <!--Collections Section-->
-    <section id="collections">
-  <h2>The Collection</h2>
-
-  <article class="product-card">
-    <div class="card-image">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836873/8jNEqDk_wfwotv.jpg" alt="A brown high platform clog">
-    </div>
-    <div class="card-text">
-      <span class="card-number">01</span>
-      <h4>The Boardroom Clog</h4>
-      <p>A high platform clog that says I have a 9 am meeting, and I still look better than everyone in this building. Leather upper, cushioned sole, zero apologies.</p>
-      <p class="price">$220</p>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <div class="card-text">
-      <span class="card-number">02</span>
-      <h4>The Soft Life Loafer</h4>
-      <p>A butter-soft leather loafer in warm caramel. For the minimalist who wants to look effortless but also spent forty minutes picking this exact shoe.</p>
-      <p class="price">$385</p>
-    </div>
-    <div class="card-image">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836858/zbaZuxg_naoftx.jpg" alt="A butter-soft leather loafer in warm caramel">
-    </div>
-  </article>
-
-  <article class="product-card">
-    <div class="card-image">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836858/42hBL1P_r6hedo.jpg" alt="A clean crisp ASICS sneaker">
-    </div>
-    <div class="card-text">
-      <span class="card-number">03</span>
-      <h4>The ASICS Edit</h4>
-      <p>A clean, crisp ASICS sneaker in red and yellow because some days you want to make a statement and some days you want the shoe to do the talking while you simply show up and look good.</p>
-      <p class="price">$165</p>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <div class="card-text">
-      <span class="card-number">04</span>
-      <h4>The Chaos Heel</h4>
-      <p>A strappy stiletto in brown so bold it will arrive at the party before you do. Not for the faint-hearted. Definitely for the well-heeled.</p>
-      <p class="price">$445</p>
-    </div>
-    <div class="card-image">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836855/qeOMjIZ_bfbvqf.jpg" alt="A strappy stiletto in brown">
-    </div>
-  </article>
-
-  <article class="product-card">
-    <div class="card-image">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836855/7vasdMM_uwlbqz.jpg" alt="A slip-on mule with terracotta netting">
-    </div>
-    <div class="card-text">
-      <span class="card-number">05</span>
-      <h4>The Last Word Mule</h4>
-      <p>A pointed mesh mule with a suede bow that has absolutely no business being this elegant. Sheer enough to be interesting, structured enough to be serious. Wear it to dinner. Wear it to an apology. Wear it to neither and just walk around your apartment feeling like someone's protagonist.</p>
-      <p class="price">$700</p>
-    </div>
-  </article>
-
-  <article class="product-card">
-    <div class="card-text">
-      <span class="card-number">06</span>
-      <h4>The Quiet Luxury Slide</h4>
-      <p>A suede thong sandal with silver hardware so understated it hurts. This is the shoe you wear when you want everyone to know you have money but you're too elegant to say it out loud.</p>
-      <p class="price">$120</p>
-    </div>
-    <div class="card-image">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836855/ufH4Wui_jmri1p.jpg" alt="A suede thong sandal with silver hardware">
-    </div>
-  </article>
-
-      <!--Marquee Ticker Strip Section-->
-      <div class="marquee-strip">
-  <div class="marquee-track">
-    <span>NEW IN</span>
-    <span class="dot">·</span>
-    <span>THE EDIT</span>
-    <span class="dot">·</span>
-    <span>SOLE THEORY</span>
-    <span class="dot">·</span>
-    <span>WALK WELL</span>
-    <span class="dot">·</span>
-    <span>NEW IN</span>
-    <span class="dot">·</span>
-    <span>THE EDIT</span>
-    <span class="dot">·</span>
-    <span>SOLE THEORY</span>
-    <span class="dot">·</span>
-    <span>WALK WELL</span>
-    <span class="dot">·</span>
-    <span>NEW IN</span>
-    <span class="dot">·</span>
-    <span>THE EDIT</span>
-    <span class="dot">·</span>
-    <span>SOLE THEORY</span>
-    <span class="dot">·</span>
-    <span>WALK WELL</span>
-    <span class="dot">·</span>
-     <span>NEW IN</span>
-    <span class="dot">·</span>
-    <span>THE EDIT</span>
-    <span class="dot">·</span>
-    <span>SOLE THEORY</span>
-    <span class="dot">·</span>
-    <span>WALK WELL</span>
-    <span class="dot">·</span>
-     <span>NEW IN</span>
-    <span class="dot">·</span>
-    <span>THE EDIT</span>
-    <span class="dot">·</span>
-    <span>SOLE THEORY</span>
-    <span class="dot">·</span>
-    <span>WALK WELL</span>
-    <span class="dot">·</span>
-     <span>NEW IN</span>
-    <span class="dot">·</span>
-    <span>THE EDIT</span>
-    <span class="dot">·</span>
-    <span>SOLE THEORY</span>
-    <span class="dot">·</span>
-    <span>WALK WELL</span>
-    <span class="dot">·</span>
-     <span>NEW IN</span>
-    <span class="dot">·</span>
-    <span>THE EDIT</span>
-    <span class="dot">·</span>
-    <span>SOLE THEORY</span>
-    <span class="dot">·</span>
-    <span>WALK WELL</span>
-    <span class="dot">·</span>
-  </div>
-</div>
-     
-      
-</section>
-    
-    <!--Featured Section-->
-    <section id="featured">
-  <div class="featured-header">
-    <h2>New In — The Edit</h2>
-    <p>Scroll to explore →</p>
-  </div>
-        <div class="featured-wrapper">
-    <button class="scroll-arrow scroll-arrow-left" aria-label="Scroll left">
-      ←
-    </button>
-  <div class="featured-scroll">
-    
-    <div class="featured-item">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/cOx09Ss_hdmn3j.jpg" alt="The After Hours Boot">
-      <span>The After Hours Boot</span>
-    </div>
-    
-    <div class="featured-item">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/RurTZqt_dl6yy1.jpg" alt="A slip-on mule">
-      <span>The Monday Mule</span>
-    </div>
-    
-    <div class="featured-item">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/4a6e0ps_ik7hdk.jpg" alt="The Power Pump">
-      <span>The Power Stiletto</span>
-    </div>
-
-         <div class="featured-item">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1776420728/105446090b07b062f717f777f34f0335_onq6ab.jpg" alt="The ROAM Black Pony">
-      <span>ROAM Black Pony</span>
-    </div>
-
-     <div class="featured-item">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1776420844/ALOHAS_490_Rife_Sneakers_at_Free_People_in_Yellow_Size__EU_37_xk4mae.jpg" alt="The Boardwalk Sandal">
-      <span>ALOHAS 490 Rife Sneakers</span>
-    </div>
-
-     <div class="featured-item">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1776421028/Meet_Roam___A_chunky_mule_flat_with_bold_round_toes_sculptural_curves_and_a_tread_sole____Online_Now_US_Womens_5_-_16___Mens_4_-_14_pdjfvy.jpg" alt="The Boardwalk Sandal">
-      <span>ROAM In Brown</span>
-    </div>
-    
-    <div class="featured-item">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/J2WuJxs_zdmnoh.jpg" alt="The Bordeaux Edit">
-      <span>The Bordeaux Edit</span>
-    </div>
-    
-    <div class="featured-item">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836853/R6OxMEI_ko2otb.jpg" alt="The Barely There Heel">
-      <span>The Barely There Heel</span>
-    </div>
-    
-     <div class="featured-item">
-      <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/KlhrG0n_y6wfuw.jpg" alt="The Boardwalk Sandal">
-      <span>The Boardwalk Sandal</span>
-    </div>
-  </div>
-            <button class="scroll-arrow scroll-arrow-right" aria-label="Scroll right">
-      →
-    </button>
-  </div>
-</section>
-        
-        <!--About Us Section-->
-<section id="about">
-  <div class="about-image">
-    <img src="https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836854/FkK72mV_svh3gh.jpg" alt="A pair of shoes on a marble surface">
-  </div>
-  <div class="about-text">
-    <h2>We Did The Hard Part For You</h2>
-    <p>SOLE THEORY is not a shoemaker. We are the friend who has genuinely good taste, too much time, and absolutely no problem telling you that those shoes are not it. We scour showrooms, storefronts, and the darker corners of the internet so that everything you find here has already passed a very rigorous and entirely personal test: would we wear it? If the answer is no, it doesn't make the cut. Simple.</p>
-    <p>We carry pieces from the brands worth knowing — the classics you should already own, the new names you haven't heard of yet but will, and the occasional luxury find for when you decide that today is the day you treat yourself and you mean it. ASICS for the girl who moves. Hermès for the girl who arrives. Everything in between for the girl who is both, depending on the day.</p>
-    <p>There is no single type of SOLE THEORY customer. She is the one in the boardroom in the cobalt heels. She is the one at the farmers' market in the suede slide. She is the one at the airport looking unreasonably put together at 6 am in the white sneakers. The only thing she all has in common is that she never leaves the house in a shoe she doesn't love. We respect that deeply. We built this store for her.</p>
-    <blockquote>
-      "We are not here to sell you shoes. We are here to make sure you never have to think about whether your shoes are good enough. They are. We checked."
-      <cite>— Chioma Adeyinka, Founder & Creative Director</cite>
-    </blockquote>
-  </div>
-</section>
-        
-        <!--Journal Section-->
-  <section id="journal">
-    <h2>From The SOLE THEORY Journal</h2>
-    
-    <div class="journal-grid">
-    <article class="journal-card">
-    <h3>How To Build A Shoe Wardrobe From Scratch</h3>
-      <p>Six pairs. Every occasion covered. No regrets.</p>
-      <a href="#" class="journal-link">Read More →</a>
-      </article>
-    
-    <article class="journal-card">
-    <h3>The Clog Comeback Nobody Asked For But Everyone Needed</h3>
-      <p>A love letter to the most misunderstood shoe in fashion history.</p>
-      <a href="#" class="journal-link">Read More →</a>
-    </article>
-      
-    <article class="journal-card">
-     <h3>Nigerian Leather: Why The World Is Finally Paying Attention</h3>
-    <p>The craft has always been there. The recognition is just catching up.</p>
-      <a href="#" class="journal-link">Read More →</a>
-      </article>
-    </div>
-  </section>
-
-        <!--Care Section-->
-  <section id="care">
-    <h2>Your Shoes Work Hard. Return The Favour.</h2>
-    <p>Tips:</p>
-    <ul>
-      <li>Store in dust bags — not the plastic they came in, not the floor, dust bags.
-      </li>
-      <li>Rotate your pairs — wearing the same shoes every day is a commitment we respect but do not recommend.</li>
-      <li>
-        Clean leather with a soft, damp cloth — not a kitchen sponge, not a paper towel, a soft cloth.
-      </li>
-      <li>
-        Use a shoe tree for structured styles — it keeps the shape and makes you look like someone who has things figured out.
-      </li>
-      <li>
-        Waterproof suede before first wear — learn from the mistakes of those who came before you.
-      </li>
-    </ul>
-  </section>
-    
-        <!--Newsletter Section-->
-<section id="newsletter">
-  <h2>Get On The List</h2>
-  <p>New drops, exclusive collabs, and the kind of shoe content that makes you late to work because you fell down a rabbit hole at 7am. We are not sorry. Neither are you.</p>
-  <form>
- <input 
-        type="email"
-        placeholder="Your email address">
-         <button type="submit">Add Me To The List</button>
-  </form>
-  </section> 
-  </main>
-      
-      <!--Footer Section-->
-       <footer>
-  <ul>
-    <li><a href="#collections">Collections</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#journal">Journal</a></li>
-    <li>Stockists</li>
-    <li><a href="#care">Care Guide</a></li>
-    <li>Returns</li>
-    <li>Size Guide</li>
-    <li>Contact</li>
-    </ul>
-<p>© 2026 SOLE THEORY. All rights reserved.</p>
-<p><em>Walk well. Every step is a statement.</em></p>
+    <p>&copy; 2026 SOLE THEORY. All rights reserved.</p>
+    <p><em>Walk well. Every step is a statement.</em></p>
   </footer>
   
-  <a href="#hero" class="back-to-top">↑</a>
+  <a href="#hero" class="back-to-top" aria-label="Back to top">&uarr;</a>
+
+  <div class="modal" id="product-modal" role="dialog" aria-modal="true" aria-label="Product details">
+    <div class="modal-content">
+      <button class="close-modal" type="button" aria-label="Close product details">&times;</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <div class="cart-drawer" id="cart-drawer" role="dialog" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Selection</h3>
+      <button class="close-cart" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-amount">$0.00</span>
+      </div>
+      <p class="cart-note">Portfolio demo only. Checkout is not connected.</p>
+      <button class="checkout-btn" id="checkout-btn" type="button">Demo Checkout</button>
+      <p id="checkout-feedback" class="cart-feedback" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  
   <script src="script.js"></script>
 </body>
 </html>
