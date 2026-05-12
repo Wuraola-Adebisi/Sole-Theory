@@ -48,18 +48,17 @@ body {
   overflow-x: hidden;
 }
 
-/* Custom Cursor */
 .custom-cursor {
   width: 18px;
   height: 18px;
-  background: white; /* Changed to white for better inversion */
+  background: white;
   border-radius: 50%;
   position: fixed;
   top: 0;
   left: 0;
   pointer-events: none;
   z-index: 9999;
-  mix-blend-mode: difference; /* This makes it "pick up" and invert background colors */
+  mix-blend-mode: difference;
   transition: transform 0.1s ease-out, width 0.3s, height 0.3s, opacity 0.3s;
   opacity: 0;
 }
@@ -148,7 +147,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Reveal Animations */
 [data-reveal] {
   opacity: 0;
   transform: translateY(30px);
@@ -162,12 +160,10 @@ body {
   transform: translateY(0);
 }
 
-/* Staggered Reveal for Cards */
 .journal-card {
   transition-delay: calc(var(--reveal-delay, 0) * 0.1s);
 }
 
-/* 5. Dual Cursor Logic (Dot + Ring) */
 .cursor-dot, .cursor-ring {
   position: fixed;
   top: 0;
@@ -198,7 +194,6 @@ body:hover .cursor-ring {
   opacity: 1;
 }
 
-/* Hover States for Links/Cards */
 .cursor-ring.active {
   width: 50px;
   height: 50px;
@@ -278,7 +273,6 @@ body:hover .cursor-ring {
   color: var(--accent);
 }
 
-/* Mobile Nav Toggle */
 .mobile-nav-toggle {
   display: none;
   background: none;
@@ -465,7 +459,6 @@ body:hover .cursor-ring {
   font-size: 1.1rem;
 }
 
-/*Marquee Ticker Strip Section*/
 .marquee-strip {
   background: var(--accent);
   padding: 16px 0;
@@ -497,7 +490,6 @@ body:hover .cursor-ring {
   100% { transform: translateX(-50%); }
 }
 
-/*Featured*/
 .featured-wrapper {
   position: relative;
 }
@@ -599,7 +591,6 @@ body:hover .cursor-ring {
   text-transform: uppercase;
 }
 
-/*About*/
 #about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -683,7 +674,6 @@ blockquote cite {
   letter-spacing: 1px;
 }
 
-/*Journal*/
 #journal {
   background: var(--surface2);
   padding: var(--section-padding-y) var(--section-padding-x);
@@ -738,7 +728,6 @@ blockquote cite {
   text-transform: uppercase;
 }
 
-/*Care*/
 #care {
   padding: var(--section-padding-y) var(--section-padding-x);
   max-width: 800px;
@@ -769,7 +758,6 @@ blockquote cite {
   line-height: 1.8;
 }
 
-/*Newsletter*/
 #newsletter {
   background: var(--darkInk);
   padding: 100px var(--section-padding-x);
@@ -843,7 +831,6 @@ input:focus-visible {
   transform: translateY(-2px);
 }
 
-/*Footer*/
 footer {
   background: var(--darkInk);
   border-top: 1px solid #222;
@@ -907,7 +894,6 @@ footer em {
   transform: translateY(-3px);
 }
 
-/* 6. E-commerce Extensions */
 .header-actions {
   display: flex;
   align-items: center;
@@ -918,7 +904,7 @@ footer em {
   background: none;
   border: none;
   font-family: 'DM Mono', monospace;
-  font-size: 1.6rem; /* Larger cart icon */
+  font-size: 1.6rem;
   color: var(--text);
   cursor: pointer;
   padding: 8px;
@@ -971,7 +957,6 @@ footer em {
   border-color: var(--accent);
 }
 
-/* Modal */
 .modal {
   position: fixed;
   inset: 0;
@@ -1075,7 +1060,6 @@ footer em {
   background: var(--accent-dark);
 }
 
-/* Cart Drawer */
 .cart-drawer {
   position: fixed;
   top: 0;
@@ -1216,6 +1200,7 @@ footer em {
   transform: translateY(-2px);
 }
 
+/*Media Queries*/
 @media (max-width: 768px) {
   .modal-content {
     padding: 32px 24px;
@@ -1232,7 +1217,6 @@ footer em {
   }
 }
 
-/*Media Queries*/
 @media (max-width: 992px) {
   :root {
     --section-padding-x: 40px;
