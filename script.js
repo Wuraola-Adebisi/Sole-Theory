@@ -1,4 +1,3 @@
-// DOM Elements
 const featuredScroll = document.querySelector('.featured-scroll');
 const leftArrow = document.querySelector('.scroll-arrow-left');
 const rightArrow = document.querySelector('.scroll-arrow-right');
@@ -9,9 +8,7 @@ const formFeedback = document.querySelector('#form-feedback');
 const cursor = document.querySelector('.custom-cursor');
 const revealElements = document.querySelectorAll('[data-reveal]');
 
-/**
- * 1. Intersection Observer for Reveal Animations
- */
+
 if (revealElements.length > 0) {
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -28,9 +25,7 @@ if (revealElements.length > 0) {
   revealElements.forEach(el => revealObserver.observe(el));
 }
 
-/**
- * 2. Scroll Functionality for Featured Section
- */
+
 if (featuredScroll && leftArrow && rightArrow) {
   function scrollByContainerWidth(direction) {
     const containerWidth = featuredScroll.offsetWidth;
@@ -66,9 +61,6 @@ if (featuredScroll && leftArrow && rightArrow) {
   window.addEventListener('resize', updateArrowVisibility);
 }
 
-/**
- * 3. Mobile Navigation Toggle
- */
 if (navToggle && primaryNav) {
   navToggle.addEventListener('click', () => {
     const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
@@ -86,9 +78,6 @@ if (navToggle && primaryNav) {
   });
 }
 
-/**
- * 4. Newsletter Form Handling
- */
 if (newsletterForm && formFeedback) {
   newsletterForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -104,9 +93,7 @@ if (newsletterForm && formFeedback) {
   });
 }
 
-/**
- * 5. Custom Cursor Logic
- */
+
 const dot = document.querySelector('.cursor-dot');
 const ring = document.querySelector('.cursor-ring');
 const interactiveElements = document.querySelectorAll('a, button, input, .product-card, .featured-item, .journal-card');
@@ -122,12 +109,10 @@ if (dot && ring) {
   });
 
   function animateCursor() {
-    // Dot follows fast (0.3 lerp)
     dotX += (mouseX - dotX) * 0.3;
     dotY += (mouseY - dotY) * 0.3;
     dot.style.transform = `translate3d(${dotX - 3}px, ${dotY - 3}px, 0)`;
-
-    // Ring follows slower (0.15 lerp) for that "lag" effect
+    
     ringX += (mouseX - ringX) * 0.15;
     ringY += (mouseY - ringY) * 0.15;
     ring.style.transform = `translate3d(${ringX - 17}px, ${ringY - 17}px, 0)`;
@@ -148,45 +133,43 @@ if (dot && ring) {
   });
 }
 
-/**
- * 6. E-commerce State & Logic
- */
+
 const products = {
   'boardroom-clog': {
     name: 'The Boardroom Clog',
     price: 220,
     image: 'https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836873/8jNEqDk_wfwotv.jpg',
-    desc: 'A high platform clog that says I have a 9 am meeting, and I still look better than everyone in this building. Leather upper, cushioned sole, zero apologies.'
+    desc: 'Leather upper, cushioned sole, zero apologies.'
   },
   'soft-life-loafer': {
     name: 'The Soft Life Loafer',
     price: 385,
     image: 'https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836858/zbaZuxg_naoftx.jpg',
-    desc: 'A butter-soft leather loafer in warm caramel. For the minimalist who wants to look effortless but also spent forty minutes picking this exact shoe.'
+    desc: 'For the minimalist who wants to look effortless but also spent forty minutes picking this exact shoe.'
   },
   'asics-edit': {
     name: 'The ASICS Edit',
     price: 165,
     image: 'https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836858/42hBL1P_r6hedo.jpg',
-    desc: 'A clean, crisp ASICS sneaker in red and yellow because some days you want to make a statement and some days you want the shoe to do the talking.'
+    desc: 'Some days you want to make a statement and some days you want the shoe to do the talking.'
   },
   'chaos-heel': {
     name: 'The Chaos Heel',
     price: 445,
     image: 'https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836855/qeOMjIZ_bfbvqf.jpg',
-    desc: 'A strappy stiletto in brown so bold it will arrive at the party before you do. Not for the faint-hearted. Definitely for the well-heeled.'
+    desc: 'Not for the faint-hearted. Definitely for the well-heeled.'
   },
   'last-word-mule': {
     name: 'The Last Word Mule',
     price: 700,
     image: 'https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836855/7vasdMM_uwlbqz.jpg',
-    desc: 'A pointed mesh mule with a suede bow that has absolutely no business being this elegant. Sheer enough to be interesting, structured enough to be serious.'
+    desc: 'Sheer enough to be interesting, structured enough to be serious.'
   },
   'luxury-slide': {
     name: 'The Quiet Luxury Slide',
     price: 120,
     image: 'https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836855/ufH4Wui_jmri1p.jpg',
-    desc: 'A suede thong sandal with silver hardware so understated it hurts. This is the shoe you wear when you want everyone to know you have money.'
+    desc: 'This is the shoe you wear when you want everyone to know you have money.'
   }
 };
 
@@ -200,7 +183,6 @@ const cartTotal = document.querySelector('#cart-total-amount');
 const checkoutBtn = document.querySelector('#checkout-btn');
 const checkoutFeedback = document.querySelector('#checkout-feedback');
 
-// Modal Logic
 const closeProductModal = () => {
   if (!productModal) return;
   productModal.classList.remove('active');
@@ -231,7 +213,6 @@ document.querySelectorAll('.product-card').forEach(card => {
     }
   };
 
-  // Click on image, title, or view button
   card.querySelector('.card-image').addEventListener('click', openModal);
   card.querySelector('h3').addEventListener('click', openModal);
   card.querySelector('.view-btn').addEventListener('click', openModal);
