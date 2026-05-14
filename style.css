@@ -22,10 +22,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  cursor: none !important; /* Nuclear hide */
+  cursor: none !important; 
 }
 
-/* Re-enable default cursor for mobile only */
 @media (max-width: 768px) {
   * {
     cursor: auto !important;
@@ -85,7 +84,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Accessibility */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -205,7 +203,6 @@ body:hover .cursor-ring {
   transform: scale(0);
 }
 
-/* Enhanced Hover States */
 .product-card {
   display: flex;
   align-items: center;
@@ -1035,7 +1032,7 @@ footer em {
 }
 
 .modal-info h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 2.5rem;
   color: var(--darkInk);
 }
