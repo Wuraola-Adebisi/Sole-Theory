@@ -144,14 +144,14 @@ const products = {
   'soft-life-loafer': {
     name: 'The Soft Life Loafer',
     price: 385,
-    image: 'https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836858/zbaZuxg_naoftx.jpg',
+    image: 'https://res.cloudinary.com/dnkfg07ov/image/upload/v1782086174/Markante_Loafers_aus_Leder_b3e3ec.jpg',
     desc: 'For the minimalist who wants to look effortless but also spent forty minutes picking this exact shoe.'
   },
   'asics-edit': {
     name: 'The ASICS Edit',
     price: 165,
     image: 'https://res.cloudinary.com/dnkfg07ov/image/upload/q_auto/f_auto/v1775836858/42hBL1P_r6hedo.jpg',
-    desc: 'Some days you want to make a statement and some days you want the shoe to do the talking.'
+    desc: 'https://res.cloudinary.com/dnkfg07ov/image/upload/v1782088614/ASICS_GEL-NYC_Sneakers_r9li3c.jpg'
   },
   'chaos-heel': {
     name: 'The Chaos Heel',
