@@ -47,7 +47,3 @@ Sole Theory is an editorial footwear storefront that combines a magazine-style p
 - Escape-key modal and cart closing
 - Demo cart state, totals, and item removal
 - Newsletter and checkout demo feedback
-
-## Project Status
-
-This is a portfolio concept project. Product browsing, modal details, cart interactions, and newsletter feedback are functional demos. Checkout and newsletter submission are intentionally not connected to a backend or payment provider.
