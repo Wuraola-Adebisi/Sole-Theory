@@ -1,6 +1,6 @@
 # Sole Theory
 
-Sole Theory is a fictional editorial footwear storefront built with HTML, CSS, and vanilla JavaScript. It combines a magazine-style product experience with interactive product modals, a demo cart drawer, responsive navigation, reveal animations, and a horizontal new-arrivals gallery.
+Sole Theory is an editorial footwear storefront that combines a magazine-style product experience with interactive product modals, a demo cart drawer, responsive navigation, reveal animations, and a horizontal new-arrivals gallery.
 
 ## Live Site
 
